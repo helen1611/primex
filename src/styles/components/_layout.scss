@@ -3,7 +3,7 @@
 }
 .layoutDrawer{
   display: flex;
-  &_nav{
+  &__nav{
     width: $width-sidebar;
     height: 100vh;
     z-index: 1038;
@@ -13,17 +13,25 @@
     left: 0;
     background-color: $gray-100;
     border-right: 1px solid $gray-200;
+    flex-shrink: 0;
   }
-  &_content{
+  &__content{
     padding-left: $width-sidebar;
     top: 5rem;
     bottom: 4.5rem;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     min-width: 0;
     flex-grow: 1;
     min-height: calc(100vh - 4.5rem);
+  }
+  @include max-991{
+    &_nav{
+      width: $width-sidebar-mobile;
+    }
+    &_content{
+      padding-left: $width-sidebar-mobile;
+    }
   }
 }

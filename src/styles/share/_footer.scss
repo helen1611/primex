@@ -11,4 +11,7 @@
   padding: $spacing;
   background-color: $gray-200;
   font-size: $font-size-sm;
+  @include max-991{
+    left: $width-sidebar-mobile;
+  }
 }

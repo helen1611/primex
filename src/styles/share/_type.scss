@@ -2,6 +2,9 @@ html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @include max-991{
+    font-size: 62.5% !important;
+  }
 }
 body {
   font-size: 1.6rem;

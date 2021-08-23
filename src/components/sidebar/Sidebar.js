@@ -1,5 +1,5 @@
 import React from 'react';
-import CountriesList from '../countries/CountriesList';
+
 
 class SideBar extends React.Component{
   render(){
@@ -13,7 +13,7 @@ class SideBar extends React.Component{
             </a>
           </li>
         </ul>
-        <CountriesList/>
+        
         
       </div>
     )

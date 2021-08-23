@@ -13,6 +13,12 @@
   &__content{
     padding: $spacing;
   }
+  @include max-991{
+    &__name{
+      width: calc(100% - 200px);
+    }
+    
+  }
 }
 
 .add-user{
